@@ -79,7 +79,7 @@ border: none;
 
     
     background: url('https://images.pexels.com/photos/4190917/pexels-photo-4190917.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    clip-path: polygon(0 0, 100% 0, 100% 62%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     
     
 }
@@ -87,7 +87,7 @@ border: none;
 .sliderWrapper
 {
     display: flex;
-    width:100vw;
+    width:500vw;
     
 }
 
@@ -97,5 +97,41 @@ border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
+}
+
+.slideBg
+{
+width:750px;
+height:750px;
+border-radius: 50%;
+position:absolute;
+background-color: beige;
+z-index:1;
+}
+
+.sliderTitle
+{
+    position:absolute;
+    top: 10%;
+    right:10%;
+    font-weight:900;
+    text-align: center;
+    font-size: 60px;
+    z-index:1;
+}
+
+.sliderImg
+{
+    z-index:1;
+}
+.sliderPrice
+{
+    position:absolute;
+    top: 10%;
+    left:10%;
+    font-weight:900;
+    text-align: center;
+    font-size: 60px;
 }
