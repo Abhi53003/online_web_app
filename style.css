@@ -79,7 +79,8 @@ border: none;
 
     
     background: url('https://images.pexels.com/photos/4190917/pexels-photo-4190917.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+    overflow: hidden;
     
     
 }
@@ -88,7 +89,8 @@ border: none;
 {
     display: flex;
     width:500vw;
-    
+    /* this animation apply over all childs and becasuse we used all keyword */
+    transition: all 0.5s ease-in-out;
 }
 
 .sliderItem
@@ -107,8 +109,8 @@ width:750px;
 height:750px;
 border-radius: 50%;
 position:absolute;
-background-color: beige;
-z-index:1;
+
+
 }
 
 .sliderTitle
@@ -134,4 +136,51 @@ z-index:1;
     font-weight:900;
     text-align: center;
     font-size: 60px;
+}
+
+.buyButton
+{
+    position:absolute;
+    top: 50%;
+    right:10%;
+    font-weight:900;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    z-index:1;
+    background-color: black;
+    cursor: pointer;
+}
+
+.buyButton:hover
+{
+    background-color: white;
+    color: black;
+}
+/* 
+here we using nth child method to select values in css these all valus are sibbling and access by number only */
+/* we can use number 
+.sliderItem:nth-child(1)
+even --> for even positions
+odd --. for odd postions  */
+.sliderItem:nth-child(1) .slideBg
+{
+    background-color: #8a8a72;
+}
+.sliderItem:nth-child(2) .slideBg
+{
+    background-color: #72868a;
+}
+.sliderItem:nth-child(3) .slideBg
+{
+    background-color: #b670e4;
+}
+.sliderItem:nth-child(4) .slideBg
+{
+    background-color: #ec9a3b;
+}
+.sliderItem:nth-child(5) .slideBg
+{
+    background-color: #1ab1df;
 }
