@@ -86,6 +86,7 @@ const products=[
 
 ]
 
+let chooseitem=products[0]
 
 // Select the wrapper element
 const wrapper = document.querySelector(".sliderWrapper");
