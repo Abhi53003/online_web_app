@@ -105,8 +105,8 @@ border: none;
 
 .slideBg
 {
-width:750px;
-height:750px;
+width:700px;
+height:700px;
 border-radius: 50%;
 position:absolute;
 
@@ -174,7 +174,7 @@ odd --. for odd postions  */
 }
 .sliderItem:nth-child(3) .slideBg
 {
-    background-color: #b670e4;
+    background-color: #4b5b4b;
 }
 .sliderItem:nth-child(4) .slideBg
 {
@@ -182,5 +182,43 @@ odd --. for odd postions  */
 }
 .sliderItem:nth-child(5) .slideBg
 {
-    background-color: #1ab1df;
+    background-color: #654938;
+}
+/* s */
+
+.features
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: gray;
+}
+
+.featureImg
+{
+    width:50px;
+    height:50px ;
+}
+
+.feature
+{
+    display:flex;
+    flex-direction: column;
+text-align: center;
+    align-items: center;
+}
+
+.featureTitle
+{
+    font-size: 20px;
+    font-weight: 400px;
+    margin-top: 30px;
+    margin-bottom:0px;
+    color: black;
+}
+.featureDesc
+{
+width: 100%;
+height: 100px;
 }
